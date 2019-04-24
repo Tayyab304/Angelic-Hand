@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserProfileActivity">
+
+    <ImageView
+        android:id="@+id/user_status_userprofile"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="222dp"
+        android:layout_marginEnd="85dp"
+        android:src="@drawable/icon_verified_volunteer" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/user_image_profile_user_profile"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/icon_user_profile" />
+
+
+            <TextView
+                android:id="@+id/user_username_userprofile"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:hint="User Name"
+                android:padding="5dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/icon_message"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                />
+
+            <TextView
+                android:id="@+id/user_useraddress_userprofile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="address"
+                android:padding="5dp"
+                android:textColor="@color/black"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="left"
+                android:textSize="20sp"
+                />
+
+            <TextView
+                android:id="@+id/user_userorganization_userprofile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Organization"
+                android:padding="5dp"
+                android:textColor="@color/black"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="left"
+                android:textSize="20sp"
+                />
+
+            <TextView
+                android:id="@+id/user_org_no_userprofile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Volunteer No"
+                android:visibility="invisible"
+                android:padding="5dp"
+                android:textColor="@color/black"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="left"
+                android:textSize="20sp"
+                />
+
+            <ListView
+                android:id="@+id/user_userlist_userprofile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                ></ListView>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ProfileFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <include
+        android:id="@+id/app_bar_user_profile"
+        layout="@layout/custom_toolbar"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="57dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/user_image_profile"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="50dp"
+            android:src="@drawable/icon_user_profile" />
+
+        <ImageView
+            android:id="@+id/edit_profile"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="40dp"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/icon_edit_profile" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/borderusers"
+            android:padding="10dp"
+            android:layout_marginTop="20dp"
+            >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+        <EditText
+            android:id="@+id/fname_profile"
+            android:layout_width="145dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/inputusers"
+            android:layout_marginTop="5dp"
+            android:padding="10dp"
+            android:hint="First Name"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/lname_profile"
+            android:layout_width="145dp"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:padding="10dp"
+            android:background="@drawable/inputusers"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="5dp"
+            android:hint="Last Name"
+            android:inputType="textPersonName" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+        <EditText
+            android:id="@+id/add_profile"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:background="@drawable/inputusers"
+            android:hint="Haji Pura,Sialkot ,Punjab"
+            android:inputType="textPostalAddress" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/user_org_profile"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/inputusers"
+            android:layout_marginTop="10dp"
+
+
+            />
+        <Spinner
+            android:id="@+id/user_org_profile_spr"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/inputusers"
+            />
+            </RelativeLayout>
+        <EditText
+            android:id="@+id/org_vol_num_profile"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:background="@drawable/inputusers"
+            android:hint="Volunteer No"
+            android:inputType="textPersonName" />
+
+        </LinearLayout>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/save_profile"
+        android:layout_width="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="300dp"
+        android:background="@drawable/button1"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="3dp"
+        android:text="Save" />
+
+</RelativeLayout>

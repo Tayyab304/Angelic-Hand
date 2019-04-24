@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OrganizationRegistrationFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+
+
+    <ImageView
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:src="@drawable/angeliclogo"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"/>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/borderusers"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        >
+    <EditText
+        android:id="@+id/organization_reg_name_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Organization Name"
+        android:maxLines="1"
+        android:inputType="text"
+        android:imeOptions="actionNext"
+        android:padding="10dp"
+        android:textAllCaps="false"
+        android:background="@drawable/inputusers"
+        android:layout_marginTop="10dp"
+        />
+
+    <EditText
+        android:id="@+id/organization_reg_address_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Organization Address"
+        android:padding="10dp"
+        android:maxLines="1"
+        android:inputType="text"
+        android:imeOptions="actionNext"
+        android:background="@drawable/inputusers"
+        android:textAllCaps="false"
+        android:layout_marginTop="10dp"
+        />
+        <EditText
+            android:id="@+id/organization_reg_organization_no_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Organization No#"
+            android:maxLines="1"
+            android:inputType="text"
+            android:imeOptions="actionNext"
+            android:padding="10dp"
+            android:background="@drawable/inputusers"
+            android:textAllCaps="false"
+            android:layout_marginTop="10dp"
+            />
+    <EditText
+        android:id="@+id/organization_reg_phone_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Land Line"
+        android:padding="10dp"
+        android:maxLines="1"
+        android:imeOptions="actionNext"
+        android:inputType="phone"
+        android:background="@drawable/inputusers"
+        android:textAllCaps="false"
+        android:layout_marginTop="10dp"
+        />
+
+    <EditText
+        android:id="@+id/organization_reg_website_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Web Site"
+        android:padding="10dp"
+        android:maxLines="1"
+        android:imeOptions="actionNext"
+        android:inputType="textWebEmailAddress"
+        android:background="@drawable/inputusers"
+        android:textAllCaps="false"
+        android:layout_marginTop="10dp"
+        />
+
+        <EditText
+            android:id="@+id/organization_reg_email_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Email"
+            android:padding="10dp"
+            android:maxLines="1"
+            android:imeOptions="actionNext"
+            android:inputType="textEmailAddress"
+            android:background="@drawable/inputusers"
+            android:textAllCaps="false"
+            android:layout_marginTop="10dp"
+            />
+
+        <Button
+            android:id="@+id/organization_reg_next_button"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="Next"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center"
+            android:background="@drawable/button"
+            />
+    </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

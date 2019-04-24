@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".VerifyNumberFragment">
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/angeliclogo"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="260dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/borderusers"
+        android:orientation="vertical"
+        android:padding="25dp">
+
+
+
+
+
+
+        <EditText
+            android:id="@+id/verifynumberfragment_number_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Enter Code"
+            android:background="@drawable/inputusers"
+            android:drawableLeft="@drawable/icon_password"
+            android:drawablePadding="4dp"
+            android:padding="6dp"
+            android:maxLength="6"
+            android:inputType="phone"
+            android:textColor="@color/black"
+            android:textSize="16sp"/>
+
+        <Button
+            android:id="@+id/verifynumberfragment_send_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/button"
+            android:text="Verify"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+            />
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

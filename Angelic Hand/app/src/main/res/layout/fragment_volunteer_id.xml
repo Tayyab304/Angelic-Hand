@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".VolunteerIdFragment">
+
+
+
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/angeliclogo"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        />
+
+
+
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginLeft="40dp"
+       android:layout_marginTop="240dp"
+       android:layout_marginRight="40dp"
+       android:background="@drawable/borderusers"
+       android:orientation="vertical"
+       android:padding="25dp">
+
+       <EditText
+           android:id="@+id/volunteer_fragment_userid_edittext"
+           android:layout_width="match_parent"
+           android:layout_height="40dp"
+           android:background="@drawable/inputusers"
+           android:drawableLeft="@drawable/circleuserid"
+           android:padding="6dp"
+           android:maxLines="1"
+           android:inputType="text"
+           android:imeOptions="actionNext"
+           android:drawablePadding="4dp"
+           android:textSize="16sp"
+           android:textColor="@color/black"
+           android:hint="UserID"
+           />
+
+       <EditText
+           android:id="@+id/volunteer_fragment_password_edittext"
+           android:layout_width="match_parent"
+           android:layout_height="40dp"
+           android:background="@drawable/inputusers"
+           android:drawableLeft="@drawable/icon_password"
+           android:padding="6dp"
+           android:drawablePadding="4dp"
+           android:layout_marginTop="10dp"
+           android:textSize="16sp"
+           android:inputType="textPassword"
+           android:textColor="@color/black"
+           android:hint="Password"
+           />
+
+       <EditText
+           android:id="@+id/volunteer_fragment_confirm_password_edittext"
+           android:layout_width="match_parent"
+           android:layout_height="40dp"
+           android:background="@drawable/inputusers"
+           android:drawableLeft="@drawable/icon_password"
+           android:padding="6dp"
+           android:drawablePadding="4dp"
+           android:layout_marginTop="10dp"
+           android:textSize="16sp"
+           android:inputType="textPassword"
+           android:textColor="@color/black"
+           android:hint="Re-Type Password"
+           />
+
+       <Button
+           android:id="@+id/volunteer_fragment_next_button"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_alignParentStart="true"
+           android:layout_alignParentTop="true"
+           android:layout_marginLeft="30dp"
+           android:layout_marginRight="30dp"
+           android:layout_marginTop="16dp"
+           android:background="@drawable/button"
+           android:text="Next"
+           android:textAllCaps="false"
+           android:textColor="@android:color/white"
+           android:textSize="18sp"
+           />
+   </LinearLayout>
+
+
+</RelativeLayout>

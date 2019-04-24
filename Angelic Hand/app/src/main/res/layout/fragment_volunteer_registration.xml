@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".VolunteerRegistrationFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/angeliclogo"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        />
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"
+        android:layout_margin="10dp"
+        android:background="@drawable/borderusers"
+        android:orientation="vertical">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:orientation="horizontal">
+
+
+            <EditText
+
+                android:id="@+id/volunteerreg_fragment_firstname_edittext"
+                android:layout_width="145dp"
+                android:layout_height="40dp"
+                android:background="@drawable/inputusers"
+                android:maxLines="1"
+                android:inputType="text"
+                android:imeOptions="actionNext"
+                android:hint="First Name"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                />
+
+
+            <EditText
+                android:id="@+id/volunteerreg_fragment_lastname_edittext"
+                android:layout_width="145dp"
+                android:layout_height="40dp"
+                android:padding="10dp"
+                android:maxLines="1"
+                android:inputType="text"
+                android:imeOptions="actionNext"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/inputusers"
+                android:hint="Last Name"
+                android:textColor="@color/black"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+
+            >
+
+            <Spinner
+                android:id="@+id/volunteerreg_fragment_proviance_spiner"
+                android:layout_width="145dp"
+                android:layout_height="40dp"
+                android:background="@drawable/inputusers"
+                android:textColor="@color/black"
+                />
+
+            <Spinner
+                android:id="@+id/volunteerreg_fragment_city_spiner"
+                android:layout_width="145dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/inputusers"
+                android:textColor="@color/black"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            >
+
+            <EditText
+                android:id="@+id/volunteerreg_fragment_street_address_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:maxLines="2"
+                android:inputType="text"
+                android:imeOptions="actionNext"
+                android:background="@drawable/inputusers"
+                android:padding="10dp"
+                android:hint="Address"
+                android:textColor="@color/black"/>
+
+            <Spinner
+                android:id="@+id/volunteerreg_fragment_organization_spiner"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/inputusers"
+                android:textColor="@color/black"
+
+                ></Spinner>
+
+            <EditText
+                android:id="@+id/volunteerreg_fragment_volunteerno_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/inputusers"
+                android:padding="10dp"
+                android:maxLines="1"
+                android:inputType="text"
+                android:imeOptions="actionNext"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:hint="Volunteer No #" />
+
+
+            <Button
+                android:id="@+id/volunteerreg_fragment_registration_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/button"
+                android:text="Register"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:layout_marginBottom="10dp"/>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

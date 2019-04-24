@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "970332011889",
+    "firebase_url": "https://angelic-hand.firebaseio.com",
+    "project_id": "angelic-hand",
+    "storage_bucket": "angelic-hand.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:970332011889:android:9306eb58fc8e2b28",
+        "android_client_info": {
+          "package_name": "com.example.tt.angelichand"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "970332011889-n2k7ogkujtvnm0p1eilf1eg8flckkr1d.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.tt.angelichand",
+            "certificate_hash": "bb32c38062293b18c6afb1b63b6b0f7b662e8dbc"
+          }
+        },
+        {
+          "client_id": "970332011889-qdpb1s6pai8h5sa8nfgc8smnq4mnmjde.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCLp045sYYB7XWv1zgP9bnFXHo453blVo4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "970332011889-qdpb1s6pai8h5sa8nfgc8smnq4mnmjde.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

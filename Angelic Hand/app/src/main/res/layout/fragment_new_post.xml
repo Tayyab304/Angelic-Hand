@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".NewPostFragment">
+
+    <include
+        android:id="@+id/app_bar_new_post"
+        layout="@layout/custom_toolbar"
+        ></include>
+
+    <Button
+        android:id="@+id/new_post_fragment_post_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button1"
+        android:layout_alignParentRight="true"
+        android:layout_margin="3dp"
+        android:text="Post"
+        android:gravity="center"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="57dp"
+        android:layout_alignParentStart="true"
+        android:padding="10dp"
+        android:background="@color/graytt"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical"
+        >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/new_post_fragment_user_image_img"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/icon_user_profile"
+            />
+        <TextView
+            android:id="@+id/new_post_fragment_user_name_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginStart="20dp"
+            android:padding="5dp"
+            android:gravity="center"
+
+            android:layout_marginTop="5dp"
+            android:text="TextView"
+            android:textStyle="bold"
+            android:textSize="18sp"/>
+
+        </LinearLayout>
+
+        <Spinner
+            android:id="@+id/new_post_fragment_post_type_spiner"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:padding="5dp"
+            android:background="@drawable/inputusers"
+            android:layout_marginTop="10dp"
+            />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+        <EditText
+            android:id="@+id/new_post_fragment_post_location_edittext"
+            android:layout_width="280dp"
+            android:layout_height="40dp"
+            android:hint="Post Location"
+            android:maxLines="1"
+            android:padding="10dp"
+            android:inputType="text"
+            android:imeOptions="actionNext"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/inputusers"
+            android:textSize="18sp"
+            />
+
+         <ImageView
+             android:id="@+id/imageview_location_newpost"
+             android:layout_width="40dp"
+             android:layout_height="40dp"
+             android:layout_marginTop="19dp"
+             android:src="@drawable/icon_loc"
+
+             />
+
+                </LinearLayout>
+
+        <EditText
+            android:id="@+id/new_post_fragment_post_data_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:padding="10dp"
+            android:hint="Wana Donate Some Thing"
+            android:background="@drawable/inputusers"
+            android:inputType="textMultiLine"
+            android:lines="10" />
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+</RelativeLayout>
