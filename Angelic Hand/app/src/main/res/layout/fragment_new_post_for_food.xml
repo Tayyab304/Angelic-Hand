@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewPostForFoodFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="horizontal"
+                >
+
+
+                <EditText
+                    android:id="@+id/new_post_item_food_fragment_et"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:inputType="text"
+                    android:background="@drawable/rec_border"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="5dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="5dp"
+                    android:hint="Food Item"/>
+                <View
+                    android:layout_width="40dp"
+                    android:layout_height="0dp"
+
+                    />
+
+                <EditText
+                    android:id="@+id/new_post_quantity_food_fragment_et"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rec_border"
+                    android:inputType="date"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="5dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="5dp"
+                    android:textSize="16sp"
+                    android:hint="Quantity"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:layout_marginBottom="10dp"
+                >
+
+                <EditText
+                    android:id="@+id/new_post_expiry_food_fragment_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:editable="false"
+                    android:background="@drawable/rec_border"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="5dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="5dp"
+                    android:textSize="16sp"
+                    android:hint="Expiry Date"/>
+
+                <EditText
+                    android:id="@+id/new_post_description_food_fragment_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/rec_border"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="5dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="5dp"
+                    android:hint="Description goes here..."
+
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/input"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Select any distibution option"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:layout_marginStart="40dp"
+                            />
+
+
+                        <RadioGroup
+                            android:id="@+id/new_post_distribution_food_fragment_radio"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="5dp">
+
+                            <RadioButton
+                                android:id="@+id/new_post_nearby_food_fragment_radio"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:checked="true"
+                                android:buttonTint="@color/orange"
+                                android:text="Donate To nearby Volunteers"
+                                android:textSize="16sp"
+                                />
+
+                            <RadioButton
+                                android:id="@+id/new_post_request_food_fragment_radio"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="Donate To requested Volunteers"
+                                android:buttonTint="@color/orange"
+                                android:textSize="16sp"/>
+                        </RadioGroup>
+                    </LinearLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_margin="5dp"
+                        >
+
+
+                        <Spinner
+                            android:id="@+id/new_post_proviance_food_fragment_spr"
+                            android:layout_width="140dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:background="@drawable/input"
+                            ></Spinner>
+
+
+
+                        <Spinner
+                            android:id="@+id/new_post_city_food_fragment_spr"
+                            android:layout_width="140dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:background="@drawable/input"
+
+                            ></Spinner>
+
+
+
+                        <ListView
+                            android:id="@+id/new_post_requested_volunteers_location_food_fragment_lstview"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:visibility="invisible"
+                            android:paddingLeft="10dp"
+                            android:paddingTop="5dp"
+                            android:paddingRight="10dp"
+                            android:paddingBottom="5dp"
+                            android:background="@drawable/input"
+
+
+                            ></ListView>
+
+
+
+
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/new_post_add_pic_food_fragment_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="Add Image"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/button1"
+                    android:textAllCaps="false"
+                    android:layout_gravity="center"
+                    />
+
+
+                    <ImageView
+                        android:id="@+id/new_post_pic_food_fragment_imageview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:visibility="visible"
+                        android:layout_gravity="center"
+                        />
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
